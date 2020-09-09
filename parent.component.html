@@ -1,0 +1,4 @@
+<input type="text" (input)=takeInput($event) placeholder="type data to send">
+<h4>Parent Txt is {{txt}}</h4>
+<h3>Data From Child Is {{str}}</h3>
+<app-child (sendtochild)="recDataFromChild($event)"    [parentdata] = "txt"></app-child>
